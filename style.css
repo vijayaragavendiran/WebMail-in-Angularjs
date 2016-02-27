@@ -1,0 +1,9 @@
+.header{border:1px solid #777272;}
+.leftNav{border-right: 1px solid #777272;border-bottom: 1px solid #777272;height:600px;}
+.userMail{height:50px;}
+.subLeftNav{height:40px;padding-left:30px;}
+.allMail{/* border-bottom: 1px solid #777272; */height:300px;padding-top:20px;}
+.mailContentHeader{border-bottom: 1px solid #777272;height:100px;}
+.mailContent{border-bottom: 1px solid #777272;height:200px;}
+.contentPadding{padding-top:20px;}
+a{cursor: pointer}

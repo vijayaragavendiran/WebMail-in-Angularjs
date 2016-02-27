@@ -1,0 +1,47 @@
+  <!DOCTYPE html>
+  <html ng-app="app" ng-controller="officeMailController">
+
+  <head>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ag-grid/3.3.3/ag-grid.min.js"></script>
+    <script type='text/javascript' src="app.js"></script>
+<script type='text/javascript' src="jasmineTest.js"></script>
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+  <div class="container-fluid">
+    <div class="row">
+     <div class="col-xs-12 col-md-12 header"><h1>Office Mail</h1></div>
+    </div>
+    <div class="row">
+     <div class="col-xs-3 col-md-3 leftNav">
+      <div class="col-xs-12 col-md-12 userMail"><h4>Vijay</h4></div>
+       <div class="col-xs-12 col-md-12 subLeftNav"><h6><a ng-click="loadInbox()">Inbox({{inboxCount}})</a></h6></div>
+       <div class="col-xs-12 col-md-12 subLeftNav"><h6><a ng-click="loadSentItems()">Sent Items</a></h6></div>
+     </div>
+     <div class="col-xs-9 col-md-9 allMail">
+       <div ag-grid="gridOptions" class="ag-fresh" style="height: 100%;"></div>
+
+     </div>
+      <div class="col-xs-9 col-md-9 mailContentHeader">
+<div class="col-xs-9 col-md-9 contentPadding">Subject : {{sub}}</div>
+<div class="col-xs-3 col-md-3 contentPadding">To : {{to}}</div>
+<div class="col-xs-9 col-md-9 contentPadding">Date : {{mDate}}</div>
+<div class="col-xs-3 col-md-3 contentPadding">From : {{from}}</div>
+       </div>
+       <div class="col-xs-9 col-md-9 mailContent contentPadding"  >
+      {{content}}
+       </div>
+      
+    </div>
+  </div>
+
+  </body>
+
+  </html>
