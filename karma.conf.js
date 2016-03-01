@@ -15,7 +15,15 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js',
+      'http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-route.js',
+      'http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-mocks.js',
+      
+      
+      'https://cdnjs.cloudflare.com/ajax/libs/ag-grid/3.3.3/ag-grid.min.js',
+      'app.js',
       'jasmineTest.js'
+
     ],
 
 

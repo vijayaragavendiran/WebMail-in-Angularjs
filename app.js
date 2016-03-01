@@ -1,7 +1,7 @@
 agGrid.initialiseAgGridWithAngular1(angular);
 
 var app = angular.module('app',["agGrid"]);
-app.controller('officeMailController',['$scope','$rootScope','$http',function($scope,$rootScope,$http){
+app.controller('officeMailController',['$scope',function($scope){
 
 
 $scope.name = 'r';
@@ -13,6 +13,7 @@ $scope.loadSentItems = function(){
 }
 
 $scope.loadInbox = function(){
+    $scope.test=1;
 
 	var columnDefs = [
         {headerName: "Date", field: "date",width: 100},
